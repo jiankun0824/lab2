@@ -1,1 +1,2 @@
-# lab2
+>>make
+>>./main
