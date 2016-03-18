@@ -7,7 +7,10 @@
 
 using namespace std;
 
-test::test()
+BMI::BMI(){}
+
+
+void BMI::open()
 {
 	ifstream infile("file.in",ios::in);
 	if(!infile)
@@ -31,23 +34,14 @@ test::test()
 			calculate(height,mass);
 		}
 	}
-		
 
 }
-
-test::test(float height,float mass)
+void BMI::calculate(float height,float mass)
 {
-	calculate(height,mass);
+	bmi(mass/(height*height*0.0001));
 }
 
-
-
-void test::calculate(float height,float mass)
-{
-	BMI(mass/(height*height*0.0001));
-}
-
-void test::BMI(float result)
+void BMI::bmi(float result)
 {
 	string category;
 	if(result<15)category="Very severely underweight";

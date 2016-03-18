@@ -2,8 +2,8 @@
 #include<iostream>
 using namespace std;
 int main()
-{	cout<<"test1"<<endl;
-	test gg;
-	cout<<"test2"<<endl;
+{
+	BMI file1;
+	file1.open();
 	return 0;
 }

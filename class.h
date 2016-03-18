@@ -1,10 +1,13 @@
-class test
+#include<string>
+#include<iostream>
+using namespace std;
+class BMI
 {
 	public:
-		test();
-		test(float height,float weight);
+		BMI();
+		void open();
 		void calculate(float height,float mass);
-		void BMI(float result);
+		void bmi(float result);
 
 	private:
 		float height,mass;
